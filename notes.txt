@@ -1,0 +1,26 @@
+# Full Text Search with Django + Postgres
+
+## Full Text Search will search multiple fields, rank them by relevance and send them in particular order
+
+## __search will work for only postgres with django [example: search = Video.objects.filter(title__search=q)]
+
+## __search removes or ignores 'a' , 'and' , 'the' etc common words
+
+## __search also consider python and pythons as same
+
+## in vector we can add multiple fields
+
+## search rank will return all objects after ranking them [not just search]
+
+
+
+
+
+
+
+
+## References
+
+- https://www.elephantsql.com/  [for getting free web based postgres database if you don't want to setup locally]
+- https://github.com/PrettyPrinted/youtube_video_code/tree/master/2021/08/22/How%20to%20Perform%20Full%20Text%20Searches%20in%20Django%20With%20Postgres
+- https://www.youtube.com/watch?v=139a0fm0YFY

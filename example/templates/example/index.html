@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input name="q" type="search">
+        <button>Search</button>
+    </form>
+    <br>
+    <h4>Videos</h4>
+    <hr>
+    {% for result in search %}
+    <div>
+        <p>{{result.rank}}</p>
+        <p><b>{{result.youtube_id}}</b></p>
+        <p>{{result.headline | safe}}</p>
+    </div>
+    {%endfor%}
+    {% for video in videos %}
+    <div>
+        <p>ID: {{video.youtube_id}}</p>
+        <p>Title: {{video.title}}</p>
+        <p>Description: {{video.description}}</p>
+        <p>-------------------------</p>
+    </div>
+    {% endfor %}
+</body>
+</html>
